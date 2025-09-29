@@ -1,0 +1,33 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .main {
+    min-height: 100vh;
+    background-color: rgb(46, 46, 124);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .absolute {
+    position: absolute;
+ }
+
+ .bg-image {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;   
+    user-select: none;
+ }
+ .center-overlay {
+    background: rgba(0, 0, 0, 0.452);
+    height: 90vh;
+    width: 100%;
+    z-index: 2;
+ }
