@@ -192,12 +192,16 @@
 
       <!-- 3D model view -->
       <div class="left-side-model">
+        <div class="cv-spinner" id="loadingSpinnerOPT">
+          <span class="spinner"></span>
+        </div>
+
         <p class="product_title">OTP</p>
         <img src="assets/images/360_new.png" alt="" class="image-360 white-image">
 
         <model-viewer src="assets/model/opt.glb" ar ar-modes="webxr sceNne-viewer quick-look" camera-controls
           tone-mapping="neutral" shadow-intensity="1" camera-orbit="-321.7deg 79.74deg 180.9m" min-field-of-view="25deg"
-          max-field-of-view="25deg" disable-tap disable-pan>
+          max-field-of-view="25deg" disable-tap disable-pan id="optModel">
           <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
           </div>
@@ -209,12 +213,16 @@
       </div>
 
       <div class="right-side-model">
+        <div class="cv-spinner" id="loadingSpinnerMP">
+          <span class="spinner"></span>
+        </div>
+
         <p class="product_title">MP</p>
         <img src="assets/images/360_new.png" alt="" class="image-360">
 
         <model-viewer src="assets/model/DTD.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
           tone-mapping="neutral" shadow-intensity="1" camera-orbit="-321.7deg 79.74deg 180.9m" min-field-of-view="25deg"
-          max-field-of-view="25deg" disable-tap disable-pan>
+          max-field-of-view="25deg" disable-tap disable-pan id="mpModel">
           <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
           </div>

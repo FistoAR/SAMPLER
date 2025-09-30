@@ -340,3 +340,24 @@ function scrollToSection(key) {
   });
 });
 
+
+
+document.addEventListener("DOMContentLoaded", ()=> {
+  const map = {model: r_("optModel"), spinner: r_("loadingSpinnerOPT")};
+  const map2 = {model: r_("mpModel"), spinner: r_("loadingSpinnerMP")};
+
+  map.model.addEventListener("load", ()=> {
+    map.spinner.classList.add("hide");
+  });
+  
+  map2.model.addEventListener("load", ()=> {
+    map2.spinner.classList.add("hide");
+  });
+
+  
+function r_(text) {
+  return document.getElementById(text);
+}
+
+
+});
